@@ -44,17 +44,6 @@ body::-webkit-scrollbar-thumb {
     height: 35px;
 }
 
-#morelinks {
-    background-color: rgb(45, 45, 45); 
-    color: rgb(255, 255, 255); 
-    font-size: large; 
-    border: 0px; 
-    border-radius: 2px;
-    cursor: pointer; 
-    width: 100px; 
-    height: 50px;
-}
-
 #discordBtn {
     background-color: rgb(114, 137, 218); 
     color: rgb(255, 255, 255); 
