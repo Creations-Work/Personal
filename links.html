@@ -41,6 +41,7 @@
         </style>
     </head>
     <body>
+        <input type="text" value="Copied to clipboard!" readonly id="copyPopup">
         <center>
             <img src="Files/Images/image0.jpg" style="border-radius: 50%" alt="Createe Logo" id="CreateeImage">
             <br>
@@ -48,11 +49,39 @@
             <br>
             <div id="detailLine"></div>
             <br>
-            <h4 id="AboutLabel"><span style="color: rgb(160, 33, 50);">-></span> <span style="color: rgb(85, 27, 160);"><a href="https://www.twitch.tv/creatio_ns" target="_blank">My Twitch</a></span> <span style="color: rgb(160, 33, 50);"><-</span></h20>
+            <h1 style="font-family: monospace; color: rgb(147, 71, 255);">Twitch</h1>
+            <button id="twitchbtn">Open</button>
+            <div id="detailLine"></div>
             <br>
-            <h4 id="AboutLabel"><span style="color: rgb(160, 33, 50);">-></span> <span style="color: rgb(21, 70, 177);"><a href="https://twitter.com/aydenwood10" target="_blank">My Twitter</a></span> <span style="color: rgb(160, 33, 50);"><-</span></h20>
+            <h1 style="font-family: monospace; color: rgb(29, 161, 242);">Twitter</h1>
+            <button id="twiterbtn">Open</button>
+            <div id="detailLine"></div>
             <br>
-            <h4 id="AboutLabel"><span style="color: rgb(160, 33, 50);">-></span> <span style="color: rgb(21, 70, 177);">My Discord</span><span style="color: rgb(199, 146, 33);"> :</span><span style="color: rgb(27, 133, 194);"> Creation's#0149</span> <span style="color: rgb(160, 33, 50);"><-</span></h20>
+            <h1 style="font-family: monospace; color: rgb(139, 194, 74);">My Discord</h1>
+            <button id="disc">Copy</button>
+            <div id="detailLine"></div>
+            <br>
+            <h4 id="AboutLabel">|| <span style="color: rgb(57, 192, 17);"><a href="https://creations-work.github.io/MC/" target="_blank">Minecraft Website</a></span> ||</h20>
         </center>
     </body>
+    <script>
+        const twit = document.getElementById("twitchbtn");
+        const twiter = document.getElementById("twiterbtn");
+        const diskk = document.getElementById("disc");
+
+        twit.addEventListener("click", () => {
+             window.open("https://www.twitch.tv/creatio_ns");
+         });
+
+         diskk.addEventListener("click", () => {
+            navigator.clipboard.writeText("Creation's#0149");
+            copyPopup.style.display = "block";
+            setTimeout(() => {copyPopup.style.display = "none";}, 1000);
+         });
+
+         twiter.addEventListener("click", () => {
+             window.open("https://twitter.com/aydenwood10");
+         });
+
+    </script>
 </html>
