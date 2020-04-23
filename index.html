@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <head>
+      <title>Createe</title>
+      <meta charset = "utf-8">
+      <link rel = "shortcut icon" type = "image/x-icon" href="Files/Images/crop.png"/>
+      <link rel="stylesheet" type="text/css" href="Files/style.css">
+   </head>
+   <body>
+      <input type="text" value="Copied to clipboard!" readonly id="copyPopup">
+      <center>
+         <img src="Files/Images/image0.jpg" style="border-radius: 50%" alt="Createe Logo" id="CreateeImage">
+         <br>
+         <!--<button id="scriptBtn"><span style="color: rgb(149, 199, 144);">text here</span></button>-->
+         <br>
+         <div id="detailLine"></div>
+         <br>
+         <h1 style="font-family: monospace;">Who Am I?</h1>
+         <i style="color: rgb(180, 180, 180);">I am a self tought programmer. </i>
+         <br>
+         <i style="color: rgb(180, 180, 180);">Would you like to contact me? Click the discord link below</i>
+         <div id="detailLine"></div>
+         <br>
+         <h1 style="font-family: monospace;">Nothing Here Yet</h1>
+         <!--<i style="color: rgb(180, 180, 180);"></i>-->
+         <div id="detailLine"></div>
+         <br>
+         <h1 style="font-family: monospace; color: rgb(114, 137, 218);">Discord</h1>
+         <button id="discordBtn">JOIN</button>
+         <div id="detailLine"></div>
+         <br>
+         <h1 style="font-family: monospace;">More Link's</h1>
+         <button id="morelinks">VIEW</button>
+         <br>
+         <br>
+         <br>
+      </center>
+      <script type="text/javascript">
+         const scriptBtn = document.getElementById("scriptBtn");
+         const copyPopup = document.getElementById("copyPopup");
+         const morelinks = document.getElementById("morelinks");
+         const discordBtn = document.getElementById("discordBtn");
+         
+         /*scriptBtn.addEventListener("click", () => {
+             const scriptBox = document.createElement("textarea");
+             scriptBox.value = 'text';
+             document.body.appendChild(scriptBox);
+             scriptBox.select();
+             document.execCommand("copy");
+             document.body.removeChild(scriptBox);
+             copyPopup.style.display = "block";
+             setTimeout(() => {copyPopup.style.display = "none";}, 1000);
+         }); 
+         */
+         morelinks.addEventListener("click", () => {
+             window.open("links.html");
+         });
+         
+         discordBtn.addEventListener("click", () => {
+             window.open("https://discord.gg/34cc6g4");
+         });
+      </script>
+   </body>
+</html>
